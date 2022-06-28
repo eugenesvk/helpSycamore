@@ -5,3 +5,4 @@ edition	= "2021"
 
 # See more keys and their definitions at doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
+sycamore = "0.8.0-beta.7"
