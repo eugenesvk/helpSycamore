@@ -8,6 +8,7 @@ mod b2; // Basic 2 Reactivity
 mod b3; // Basic 3 Component
 mod b4; // Basic 4 Control Flow
 mod b5; // Basic 5 Iteration
+mod b6; // Basic 6 Data Binding
 
 fn main() { // Trunk automatically uses fn main as your project's entrypoint, no need for any #[wasm_bindgen(start)] here
   sycamore::render( // ← provided by Sycamore to render your app to the DOM (browser window)
@@ -23,6 +24,7 @@ fn main() { // Trunk automatically uses fn main as your project's entrypoint, no
       // b3::Component{name:"John Doe".to_string(), email:"john@doe.com".to_string()}
       // b3::ComponentReactDataTest{}
       // b4::ControlFlow{}
-      b5::Iteration{}
+      // b5::Iteration{}
+      b6::DataBinding{}
   });
 }
