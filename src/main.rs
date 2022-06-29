@@ -6,6 +6,7 @@ mod p0; // Hello world
 mod b1; // Basic 1 view!
 mod b2; // Basic 2 Reactivity
 mod b3; // Basic 3 Component
+mod b4; // Basic 4 Control Flow
 
 fn main() { // Trunk automatically uses fn main as your project's entrypoint, no need for any #[wasm_bindgen(start)] here
   sycamore::render( // ← provided by Sycamore to render your app to the DOM (browser window)
@@ -18,7 +19,8 @@ fn main() { // Trunk automatically uses fn main as your project's entrypoint, no
       // p0::HelloWorld() // source the component declared in P0.rs
       // b1::View{}
       // b2::React{}
-      b3::Component{name:"John Doe".to_string(), email:"john@doe.com".to_string()}
-      b3::ComponentReactDataTest{}
+      // b3::Component{name:"John Doe".to_string(), email:"john@doe.com".to_string()}
+      // b3::ComponentReactDataTest{}
+      b4::ControlFlow{}
   });
 }
