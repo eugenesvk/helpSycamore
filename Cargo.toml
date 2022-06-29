@@ -9,3 +9,10 @@ sycamore                	= "0.8.0-beta.7"
 console_log             	= "0.2.0" 	# A logger that routes messages to the browser's console
 log                     	= "0.4.17"	# A lightweight logging facade for Rust, needed by ↑
 console_error_panic_hook	= "0.1.7" 	# forward panic messages to console.error
+# wee_alloc             	= "0.4.5" 	# Tiny Wasm-Enabled, Elfin Allocator
+
+[profile.release]
+panic        	= 'abort'	# Do not perform backtrace for panic on release builds
+codegen-units	= 1      	# Perform optimizations on all codegen units
+opt-level    	= 'z'    	# Optimize for size 's' or 'z' "aggressively"
+lto          	= true   	# Enable link time optimization
