@@ -12,6 +12,7 @@ mod b4; // Basic 4 Control Flow
 mod b5; // Basic 5 Iteration
 mod b6; // Basic 6 Data Binding
 mod adv1; // Advanced 1 NodeRef
+mod adv2; // Advanced 2 Tweened
 
 fn main() { // Trunk automatically uses fn main as your project's entrypoint, no need for any #[wasm_bindgen(start)] here
   sycamore::render( // ← provided by Sycamore to render your app to the DOM (browser window)
@@ -29,6 +30,7 @@ fn main() { // Trunk automatically uses fn main as your project's entrypoint, no
       // b4::ControlFlow{}
       // b5::Iteration{}
       // b6::DataBinding{}
-      adv1::NodeRef{}
+      // adv1::NodeRef{}
+      adv2::Tweened{}
   });
 }
