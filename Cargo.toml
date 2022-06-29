@@ -5,4 +5,7 @@ edition	= "2021"
 
 # See more keys and their definitions at doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
-sycamore = "0.8.0-beta.7"
+sycamore                	= "0.8.0-beta.7"
+console_log             	= "0.2.0" 	# A logger that routes messages to the browser's console
+log                     	= "0.4.17"	# A lightweight logging facade for Rust, needed by ↑
+console_error_panic_hook	= "0.1.7" 	# forward panic messages to console.error
